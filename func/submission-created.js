@@ -78,7 +78,7 @@ export async function handler(event, context) {
             }
 
             if (!process.env.DISABLE_UNBAN_LINK) {
-                const unbanUrl = new URL("/.netlify/functions/unban", DEPLOY_PRIME_URL);
+                const unbanUrl = new URL("/.netlify/functions/unban", "https://appeal.fishkido.com");
                 const unbanInfo = {
                     userId: userInfo.id
                 };
